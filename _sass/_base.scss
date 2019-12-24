@@ -383,5 +383,9 @@ body {
 }
 
 .footer {
-    text-align: left;
+    color: #fff;
+    a:hover,
+    a:focus {
+        color: #fff;
+    }
 }
