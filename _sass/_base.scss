@@ -383,10 +383,17 @@ body {
 }
 
 .footer {
+    text-align: left;
+}
+
+a.footer:link { 
     color: #fff;
-    a,
-    a:hover,
-    a:focus {
-        color: #fff;
-    }
+    border-bottom: 1px solid white;
+}
+a.footer:visited { 
+    color: #fff;
+    border-bottom: 1px solid white;
+}
+a.footer:hover { 
+    color: #fff;
 }
