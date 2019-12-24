@@ -5,9 +5,5 @@ description: Dream - Believe - Achieve
 baseurl: ""
 url: ""
 
-facebook_username: CR.ENETCOM
-instagram_username: CR.ENETCOM
-phone_number: 0021655452950
-
 # Build settings
 markdown: kramdown
