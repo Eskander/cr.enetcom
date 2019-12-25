@@ -6,14 +6,14 @@
 
 $(document).ready(function () {
     if ($(location).attr('hash') == "#join1") {
-        $("#join").click();
+        $("#join1").click();
     }
 
     if ($(location).attr('hash') == "#gallery1") {
-        $("#gallery").click();
+        $("#gallery1").click();
     }
 
     if ($(location).attr('hash') == "#contact1") {
-        $("#join").click();
+        $("#contact1").click();
     }
 });
