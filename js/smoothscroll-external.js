@@ -16,4 +16,6 @@ $(document).ready(function () {
     if ($(location).attr('hash') == "#contact1") {
         $("#contact1").click();
     }
+
+    history.pushState("", document.title, window.location.pathname + window.location.search);
 });
