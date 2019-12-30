@@ -1,2 +1,2 @@
 # cr.enetcom
-https://eskander.github.io/cr.enetcom/
+https://cr-enetcom.tn/
