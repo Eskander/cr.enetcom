@@ -5,6 +5,10 @@
  */
 
 $(document).ready(function () {
+    if ($(location).attr('hash') == "#competition1") {
+        $("#competition1").click();
+    }
+
     if ($(location).attr('hash') == "#join1") {
         $("#join1").click();
     }
