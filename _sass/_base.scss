@@ -9,21 +9,21 @@ body {
 }
 
 hr {
-    border-color: $theme-primary;
+    border-color: $enetrobots-black;
     border-width: 3px;
     max-width: 50px;
 }
 
 hr.light {
-    border-color: white;
+    border-color: $white-color;
 }
 
 a {
     @include transition-all;
-    color: $theme-primary;
+    color: $enetrobots-black;
     &:hover,
     &:focus {
-        color: darken($theme-primary, 10%);
+        color: darken($enetrobots-black, 10%);
     }
 }
 
@@ -43,21 +43,21 @@ p {
 }
 
 .bg-primary {
-    background-color: $theme-primary;
+    background-color: $enetrobots-black;
 }
 
 .bg-dark {
-    background-color: $theme-dark;
-    color: white;
+    background-color: $dark-color;
+    color: $white-color;
 }
 
 .bg-join {
-    background-color: #ff702a;
-    color: white;
+    background-color: $orange-color;
+    color: $white-color;
 }
 
 .text-faded {
-    color: rgba(white, .7);
+    color: rgba($white-color, .7);
 }
 
 section {
@@ -73,20 +73,19 @@ aside {
 }
 
 // Navigation
-
 .navbar-default {
-    background-color: white;
-    border-color: rgba($theme-dark, .5);
+    background-color: $white-color;
+    border-color: rgba($dark-color, .5);
     @include sans-serif-font;
     @include transition-all;
     .navbar-header .navbar-brand {
-        color: $theme-primary;
+        color: $enetrobots-black;
         @include sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
         &:hover,
         &:focus {
-            color: darken($theme-primary, 10%);
+            color: darken($enetrobots-black, 10%);
         }
     }
     .nav {
@@ -96,15 +95,15 @@ aside {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
-                color: $theme-dark;
+                color: $dark-color;
                 &:hover {
-                    color: $theme-primary;
+                    color: $enetrobots-black;
                 }
             }
             &.active {
                 > a,
                 > a:focus {
-                    color: $theme-primary !important;
+                    color: $enetrobots-black !important;
                     background-color: transparent;
                     &:hover {
                         background-color: transparent;
@@ -115,45 +114,44 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: rgba($white-color, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba($white-color, .7);
             &:hover,
             &:focus {
-                color: white;
+                color: $white-color;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba($white-color, .7);
             &:hover {
-                color: white;
+                color: $white-color;
             }
         }
         &.affix {
-            background-color: white;
-            border-color: rgba($theme-dark, .5);
+            background-color: $white-color;
+            border-color: rgba($dark-color, .5);
             .navbar-header .navbar-brand {
-                color: $theme-primary;
+                color: $enetrobots-black;
                 font-size: 14px;
                 &:hover,
                 &:focus {
-                    color: darken($theme-primary, 10%);
+                    color: darken($enetrobots-black, 10%);
                 }
             }
             .nav > li > a,
             .nav > li > a:focus {
-                color: $theme-dark;
+                color: $dark-color;
                 &:hover {
-                    color: $theme-primary;
+                    color: $enetrobots-black;
                 }
             }
         }
     }
 }
 
-// Homepage Header
-
+// Homepage header
 header {
     position: relative;
     width: 100%;
@@ -162,7 +160,7 @@ header {
     background-position: center;
     background-image: url('../img/header.jpg');
     text-align: center;
-    color: white;
+    color: $white-color;
     .header-content {
         position: relative;
         text-align: center;
@@ -180,7 +178,7 @@ header {
             }
             p {
                 font-weight: 300;
-                color: rgba(white, .7);
+                color: rgba($white-color, .7);
                 font-size: 16px;
                 margin-bottom: 50px;
             }
@@ -211,7 +209,6 @@ header {
 }
 
 // Sections
-
 .section-heading {
     margin-top: 0;
 }
@@ -233,10 +230,10 @@ header {
     max-width: 650px;
     margin: 0 auto;
     .portfolio-box-caption {
-        color: white;
+        color: $white-color;
         opacity: 0;
         display: block;
-        background: rgba( $theme-primary, .9 );
+        background: rgba( $enetrobots-black, .9 );
         position: absolute;
         bottom: 0;
         text-align: center;
@@ -289,9 +286,9 @@ header {
     }
 }
 
-// Bootstrap Overrides
+// Bootstrap overrides
 .text-primary {
-    color: $theme-primary;
+    color: $enetrobots-black;
 }
 
 .no-gutter > [class*='col-'] {
@@ -299,13 +296,13 @@ header {
     padding-left:0;
 }
 
-// Button Styles
+// Buttons
 .btn-default {
-    @include button-variant($theme-dark, white, white);
+    @include button-variant($dark-color, $white-color, $white-color);
 }
 
 .btn-primary {
-    @include button-variant(white, $theme-primary, $theme-primary);
+    @include button-variant($white-color, $enetrobots-black, $enetrobots-black);
 }
 
 .btn {
@@ -321,60 +318,59 @@ header {
 }
 
 .btn-download {
-    background-color: #ff3d3d;
-    color: #fff !important;
+    background-color: $red-color;
+    color: $white-color !important;
 }
 
 .btn-join {
-    background-color: #ff702a;
-    color: #fff !important;
+    background-color: $orange-color;
+    color: $white-color !important;
     margin-top: 20px;
 }
 
 // Contact
 #contact .fa {
-    color: $theme-dark;
+    color: $dark-color;
     font-size: 4em;
 }
 
 .contact {
-    background-color: #242498;
+    background-color: $blue-color;
 }
 
 .contact-text {
-    color: #fff !important;
-    border-color: #fff !important;
+    color: $white-color !important;
+    border-color: $white-color !important;
 }
 
-// Extras
-// -- Highlight Color Customization
+// Highlight color
 ::-moz-selection {
-    color: white;
+    color: $white-color;
     text-shadow: none;
-    background: $theme-dark;
+    background: $dark-color;
 }
 
 ::selection {
-    color: white;
+    color: $white-color;
     text-shadow: none;
-    background: $theme-dark;
+    background: $dark-color;
 }
 
 img::selection {
-    color: white;
+    color: $white-color;
     background: transparent;
 }
 
 img::-moz-selection {
-    color: white;
+    color: $white-color;
     background: transparent;
 }
 
 body {
-    -webkit-tap-highlight-color: $theme-dark;
+    -webkit-tap-highlight-color: $dark-color;
 }
 
-// Other misc
+// Logos
 .competition-logo {
     max-width: 60%;
     height: auto;
@@ -390,6 +386,25 @@ body {
     height: 130px;
 }
 
+// Footer
+.footer {
+    text-align: left;
+}
+
+a.footer:link { 
+    color: $white-color;
+    border-bottom: 1px solid $white-color;
+}
+a.footer:visited { 
+    color: $white-color;
+    border-bottom: 1px solid $white-color;
+}
+a.footer:hover { 
+    color: $white-color;
+    text-decoration: none;
+}
+
+// Other misc
 .nav-title {
     font-size: 16px;
 }
@@ -400,23 +415,4 @@ body {
 
 .competition-box {
     padding: 100px 0 0 0;
-}
-
-// Footer links
-
-.footer {
-    text-align: left;
-}
-
-a.footer:link { 
-    color: #fff;
-    border-bottom: 1px solid white;
-}
-a.footer:visited { 
-    color: #fff;
-    border-bottom: 1px solid white;
-}
-a.footer:hover { 
-    color: #fff;
-    text-decoration: none;
 }
