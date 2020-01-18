@@ -12,12 +12,11 @@ var x = setInterval(function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s";
+    $("#countdown").html(days + "d " + hours + "h " + minutes + "m " + seconds + "s");
 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("countdown").style.visibility = "hidden";
+        $("#countdown").hide();
     }
 }, 1000);
 
@@ -32,11 +31,11 @@ var y = setInterval(function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("registration").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s";
+    $("#registration").html(days + "d " + hours + "h " + minutes + "m " + seconds + "s");
+
 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("registration").style.visibility = "hidden";
+        $("#registration").hide();
     }
 }, 1000);
