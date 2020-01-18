@@ -6,7 +6,7 @@ var loaded = function () {
     if (loadCounter === 2) {
         $("iframe").attr("height", "300px");
         $('html, body').stop().animate({
-            scrollTop: ($('iframe').offset().top - 50)
+            scrollTop: ($('iframe').offset().top - 150)
         }, 1250, 'easeInOutExpo');
     }
 }
