@@ -2,8 +2,8 @@
 title: Club Robotique ENET'COM
 email: mail@cr-enetcom.tn
 description: Dream - Believe - Achieve
-baseurl: ""
-url: ""
+url: https://cr-enetcom.tn/
+baseurl: /
 
 # Build settings
 markdown: kramdown
