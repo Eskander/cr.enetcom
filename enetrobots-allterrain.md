@@ -1,3 +1,0 @@
----
-layout: enetrobots-allterrain
----
