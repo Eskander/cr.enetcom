@@ -21,6 +21,7 @@ hr.light {
 a {
     @include transition-all;
     color: $enetrobots-black;
+
     &:hover,
     &:focus {
         color: darken($enetrobots-black, 10%);
@@ -78,33 +79,41 @@ aside {
     border-color: rgba($dark-color, .5);
     @include sans-serif-font;
     @include transition-all;
+
     .navbar-header .navbar-brand {
         color: $enetrobots-black;
         @include sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
+
         &:hover,
         &:focus {
             color: darken($enetrobots-black, 10%);
         }
     }
+
     .nav {
-        > li {
-            > a,
-            > a:focus {
+        >li {
+
+            >a,
+            >a:focus {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 13px;
                 color: $dark-color;
+
                 &:hover {
                     color: $enetrobots-black;
                 }
             }
+
             &.active {
-                > a,
-                > a:focus {
+
+                >a,
+                >a:focus {
                     color: $enetrobots-black !important;
                     background-color: transparent;
+
                     &:hover {
                         background-color: transparent;
                     }
@@ -112,37 +121,47 @@ aside {
             }
         }
     }
+
     @media (min-width: 768px) {
         background-color: transparent;
         border-color: rgba($white-color, .3);
+
         .navbar-header .navbar-brand {
             color: rgba($white-color, .7);
+
             &:hover,
             &:focus {
                 color: $white-color;
             }
         }
-        .nav > li > a,
-        .nav > li > a:focus {
+
+        .nav>li>a,
+        .nav>li>a:focus {
             color: rgba($white-color, .7);
+
             &:hover {
                 color: $white-color;
             }
         }
+
         &.affix {
             background-color: $white-color;
             border-color: rgba($dark-color, .5);
+
             .navbar-header .navbar-brand {
                 color: $enetrobots-black;
                 font-size: 14px;
+
                 &:hover,
                 &:focus {
                     color: darken($enetrobots-black, 10%);
                 }
             }
-            .nav > li > a,
-            .nav > li > a:focus {
+
+            .nav>li>a,
+            .nav>li>a:focus {
                 color: $dark-color;
+
                 &:hover {
                     color: $enetrobots-black;
                 }
@@ -161,11 +180,13 @@ header {
     background-image: url('/assets/images/header.jpg');
     text-align: center;
     color: $white-color;
+
     .header-content {
         position: relative;
         text-align: center;
         padding: 100px 15px 100px;
         width: 100%;
+
         .header-content-inner {
             h1 {
                 font-weight: 700;
@@ -173,9 +194,11 @@ header {
                 margin-top: 0;
                 margin-bottom: 0;
             }
+
             hr {
                 margin: 30px auto;
             }
+
             p {
                 font-weight: 300;
                 color: rgba($white-color, .7);
@@ -184,8 +207,10 @@ header {
             }
         }
     }
+
     @media (min-width: 768px) {
         min-height: 100%;
+
         .header-content {
             position: absolute;
             top: 50%;
@@ -193,10 +218,12 @@ header {
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
             padding: 0 50px;
+
             .header-content-inner {
                 max-width: 1000px;
                 margin-left: auto;
                 margin-right: auto;
+
                 p {
                     font-size: 18px;
                     max-width: 80%;
@@ -216,9 +243,11 @@ header {
 .service-box {
     max-width: 400px;
     margin: 50px auto 0;
+
     @media (min-width: 992px) {
         margin: 20px auto 0;
     }
+
     p {
         margin-bottom: 0;
     }
@@ -229,49 +258,57 @@ header {
     display: block;
     max-width: 650px;
     margin: 0 auto;
+
     .portfolio-box-caption {
         color: $white-color;
         opacity: 0;
         display: block;
-        background: rgba( $enetrobots-black, .9 );
+        background: rgba($enetrobots-black, .9);
         position: absolute;
         bottom: 0;
         text-align: center;
         width: 100%;
         height: 100%;
         @include transition-all;
+
         .portfolio-box-caption-content {
             width: 100%;
             text-align: center;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
+
             .project-category,
             .project-name {
                 @include sans-serif-font;
                 padding: 0 15px;
             }
+
             .project-category {
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: 14px;
             }
+
             .project-name {
                 font-size: 18px;
             }
         }
     }
+
     &:hover {
         .portfolio-box-caption {
             opacity: 1;
         }
     }
+
     @media (min-width: 768px) {
         .portfolio-box-caption {
             .portfolio-box-caption-content {
                 .project-category {
                     font-size: 16px;
                 }
+
                 .project-name {
                     font-size: 22px;
                 }
@@ -291,9 +328,9 @@ header {
     color: $enetrobots-black;
 }
 
-.no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
+.no-gutter>[class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 // Buttons
@@ -391,15 +428,17 @@ body {
     text-align: left;
 }
 
-a.footer:link { 
+a.footer:link {
     color: $white-color;
     border-bottom: 1px solid $white-color;
 }
-a.footer:visited { 
+
+a.footer:visited {
     color: $white-color;
     border-bottom: 1px solid $white-color;
 }
-a.footer:hover { 
+
+a.footer:hover {
     color: $white-color;
     text-decoration: none;
 }
@@ -418,7 +457,7 @@ a.footer:hover {
 }
 
 .competition-banner {
-    width: 100%;
+    width: 60%;
     margin: 0 0 30px 0;
 }
 
