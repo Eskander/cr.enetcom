@@ -1,4 +1,4 @@
-var competitionDate = new Date("Jan 29, 2023 08:00:15").getTime();
+var competitionDate = new Date("Mar 19, 2023 08:00:15").getTime();
 
 var x = setInterval(function () {
 
